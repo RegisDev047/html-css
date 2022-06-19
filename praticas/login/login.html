@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style01.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-box">
+        <div class="box-left">
+            <h1>QUE BOM REVER VOCÊ!</h1>
+            <img src="imagens/imagemlog.svg" .class="left-login-image" alt="imagem login">
+        </div>
+        <div class="box-right">
+            <div class="card-log">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" minlength="4" id="usuario" title="Preencha este campo!" maxlength="8" placeholder="João123" autocomplete="off">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Senha" minlength="4" maxlength="15" title="Preencha este campo!">
+                </div>
+                <div class="logar">
+                    <input type="submit" value="Login" onclick="logar()">
+                </div>
+                <div class="cad">
+                    <h2>Ainda não tem uma conta ? <a href="cadastro.html">Cadastrar-se</a></h2>
+                </div>
+            </div>
+    </div>
+    <script>
+
+        function logar(){
+
+        var login = document.getElementById('usuario').value;
+        var senha = document.getElementById('senha').value;
+
+        if(login == "Regis" && senha == "leo01"){
+            location.href = "home.html";
+        }else{
+                alert('Algo está incorreto!')
+            }
+
+    }
+    </script>
+</body>
+</html>

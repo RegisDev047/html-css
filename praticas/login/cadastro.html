@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style02.css">
+    <title>Seja Bem-Vindo!</title>
+</head>
+<body>
+    <div class="main-box">
+        <div class="box-left">
+            <h1>Cadastre-se Já! <br> Junte-se a nós!</h1>
+        </div>
+        <div class="box-right">
+            <div class="card-cad">
+                <h1>CADASTRAR-SE</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" minlength="4" id="usuario" title="Preencha este campo!" maxlength="8" placeholder="João123">
+                </div>
+                <div class="textfield">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" title="Preencha este campo!" placeholder="joão123@gmail.com" maxlength="30" size="27">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Senha" minlength="4" maxlength="8" title="Preencha este campo!">
+                </div>
+                <div class="textfield">
+                    <label for="nomesob">Nome e Sobrenome</label>
+                    <input type="text" id="nomesob" placeholder="João da Silva" minlenght="5" title="Preencha este campo!">
+                </div>
+                <div class="textfield">
+                    <label for="nasc">Data de nascimento</label>
+                    <input type="date" id="nasc" title="Preencha este campo!">
+                </div>
+                <div class="cad">
+                    <input type="submit" value="Cadastrar-se" onclick="cadastrar()">
+                </div>
+                <h2>Já tem uma conta ? <a href="login.html">Login</a></h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        function cadastrar(){
+
+            var login = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value;
+            var email = document.getElementById('email').value;
+
+            if(login == "admin" && senha == "admin" && email == "@"){ 
+                alert('Sucesso!');
+            }else{
+                alert('Algo está incorreto!')
+            }
+            
+        }
+    </script>
+</body>
+</html>

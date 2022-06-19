@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body> <!--FIZ O STYLE POR CONTA PROPRIA-->
+    <style> 
+        body{
+            background-color: rgb(142, 150, 255);
+        }
+        h1{
+            text-decoration: underline wavy rgb(172, 192, 253);
+        }
+    </style>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Desafio 006</h1> <!--Tem algo errado não ta indo direito 04/04/22-->
+    <picture>
+        <source media="(max-width: 263)" srcset="desafio/imagens desafio/paisagem-p" type="image/png">
+        <source media="(max-width: 619px)" srcset="desafio/imagens desafio/paisagem-m" type="image/png">
+        <img src="desafio/imagens desafio/paisagem-org.png" alt="Imagem de paisagem">
+    </picture>
+    <h1>Inputs mais usados</h1>
+    <p><input type="text">Digite um texto</p>
+    <p><input type="hidden">Não sei oque faz KKK (é algo escondido)</p>
+    <p><input type="checkbox">Marque algum op.A</p>
+    <p><input type="checkbox">Opção B</button></p>
+    <p><input type="file">Serve para carregar um arquivo em algum lugar</p>
+    <p><input type="submit">Envia algo</p>
+    <p><input type="tel">Coloque seu número</p>
+    <p><input type="url">Cole alguma url</p>
+    <p><input type="password">Escolha uma senha</p>
+    <p><input type="search">Procure por algo</p>
+    <p><input type="datetime-local">Escolha uma data e hora</p>
+    <p><input type="time">Coloque um horario</p>
+    <p><input type="date">Escolha uma data</p>
+    <p><input type="range">Arraste para algum lado</p>
+    <p><input type="color">Escolha uma cor</p>
+    <p><input type="email">Coloque seu email></p>
+    <p><input type="image">Carregue uma imagem</p>
+    <p><input type="reset">Resete algo</p>
+    <p><input type="radio">Ativa e desativa algo</p>
+    <p><input type="radio">Ativa e desativa algo</p>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/megajogadeladin.mp3" controls autoplay></audio> <!--Formato mais simples--> <!--Melhores maneiras são MP3 WAV OGG-->
+    <audio preload="metadata" autoplay loop>
+        <source src="midia/megajogadeladin.mp3" type="audio/mpeg">
+        <source src="midia/megajogadeladin.mp3" type="audio/ogg">
+        <source src="midia/megajogadeladin.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/megajogadeladin.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+</html>

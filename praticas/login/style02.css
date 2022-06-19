@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-box {
+    width: 100vw;
+    height: 100vh;
+    background: #015743;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-left > h1 {
+    color: #06A9DF;
+}
+
+.box-right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.card-cad {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px ;
+    background: #2370ebb1;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000067;
+}
+
+.card-cad > h1 {
+    color: #001b26;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input {
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+button {
+    border-radius: 8px;
+    width: 48%;
+    height: 40px;
+}
+
+.textfield1 > label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.log > h2 {
+    font-size: 16px;
+}
+
+a:link {
+    color: rgb(154, 255, 189);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:visited {
+    color: rgb(110, 180, 135);
+}
+
+a:hover {
+    color: rgb(81, 134, 99);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgba(2, 227, 81, 0.827);
+    background-color: rgb(0, 0, 0);
+}
+
+.cad > input {
+    border-radius: 8px;
+    background-color: #06a9dfba;
+    box-shadow: 0px 5px 40px #00000067;
+    margin-top: 8px;
+    width: 170px;
+    height: 40px;
+    font-size: 15px;
+}
